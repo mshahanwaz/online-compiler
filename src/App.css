@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --color: #7700ff;
+}
+
+.app {
+  font-family: var(--font);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: 10px 0; */
+}
+
+.app__editor {
+  border: 2px solid var(--color);
+}
+
+.app__editor--title {
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 2px solid var(--color);
+  background-color: rgb(241, 241, 241);
+}
+
+.app__options {
+  padding: 10px 0;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__languages {
+  display: flex;
+  align-items: center;
+}
+
+.app__languages p {
+  padding-right: 10px;
+}
+
+.app__languages select {
+  font-family: var(--font);
+  border: 2px solid var(--color);
+  padding: 10px 7px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.app__languages select::-ms-expand {
+  display: none;
+}
+
+.app__options button {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 7px 20px;
+  font-family: var(--font);
+  border: 2px solid var(--color);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.app__options button:focus {
+  outline: none;
+}
+
+.app__languages select:focus {
+  outline: none;
+}
+
+.app__std {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__std {
+  width: 600px;
+}
+
+.app__area {
+  height: 80px;
+  resize: unset;
+  border-radius: 0px;
+  border: 2px solid var(--color);
+}
+
+.app__area:nth-child(1) {
+  margin-bottom: 10px;
+}
